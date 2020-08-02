@@ -301,6 +301,10 @@ a:hover {
     line-height: 44px;
 }
 
+.navbar-brand:focus {
+    border: solid #F3976C 1px;
+}
+
 .navbar-brand img {
     max-height: 200px;
     margin: 0 5px 0 0;
@@ -335,6 +339,10 @@ a:hover {
 .nav > li a:hover,
 .nav > li a:focus {
     background: transparent;
+}
+
+.nav > li a:focus {
+    border: solid #F3976C 1px;
 }
 
 .navbar-toggle {
@@ -481,6 +489,10 @@ button {
     margin: 15px;
 }
 
+a:focus .icon-md {
+    border: solid black 1px;
+}
+
 .icon-lg {
     font-size: 60px!important;
 }
@@ -538,7 +550,7 @@ a[data-lightbox] {
     text-align: center;
 }
 
-a[data-lightbox]:hover::before {
+a[data-lightbox]:hover::before, a[data-lightbox]:focus::before{
     content: "+";
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
     font-size: 32px;
@@ -556,7 +568,7 @@ a[data-lightbox]:hover::before {
     -webkit-transform: translateY(-50%);
 }
 
-a[data-lightbox]:hover img {
+a[data-lightbox]:hover img, a[data-lightbox]:focus img {
     opacity: 0.6;
     -webkit-animation-fill-mode: none;
     animation-fill-mode: none;
@@ -598,10 +610,13 @@ a[data-lightbox]:hover img {
     background: rgba(0, 0, 0, .5);
     border: none;
     line-height: 30px;
-    padding: 0 9px 5px;
+    padding: 8px 17px 13px;
     opacity: 0.3;
 }
 
+.close-lightbox:focus {
+    border: solid black 1px;
+}
 .close-lightbox:hover,
 .next-lightbox:hover,
 .prev-lightbox:hover {
@@ -622,13 +637,21 @@ a[data-lightbox]:hover img {
 }
 
 .next-lightbox {
-    padding: 6px 8px 1px 13px;
+    padding: 14px 16px 9px 21px;
     right: 25px;
 }
 
+.next-lightbox:focus {
+    border: solid black 1px;
+}
+
 .prev-lightbox {
-    padding: 6px 13px 1px 10px;
+    padding: 14px 21px 9px 18px;
     left: 25px;
+}
+
+.prev-lightbox:focus {
+    border: solid black 1px;
 }
 
 .snapshot-lb .modal-body {
@@ -785,19 +808,27 @@ h4 {
     color: #FFFFFF!important;
 }
 
-.btn-atomic-tangerine:hover {
+.btn-atomic-tangerine:hover,
+.btn-atomic-tangerine:focus {
     background: #c27956!important;
     color: #FFFFFF!important;
 }
 
+.btn-atomic-tangerine:focus {
+    border: solid black 1px;
+}
 .ltc-white {
     color: #FFFFFF!important;
     padding-top: 16px;
     padding-bottom: 16px;
 }
 
-.ltc-white:hover {
+.ltc-white:hover,.ltc-white:focus {
     color: #cccccc!important;
+}
+
+.ltc-white:focus {
+    border: solid #F3976C 1px;
 }
 
 .ltc-atomic-tangerine {
