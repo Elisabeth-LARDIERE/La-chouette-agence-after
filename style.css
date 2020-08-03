@@ -346,17 +346,23 @@ a:hover {
 }
 
 .navbar-toggle {
-    margin: 10px 10px 0 0;
+    margin: 0 10px 0 0;
     border: 0px;
+    padding: 10px;
 }
 
-.navbar-toggle:hover {
+.navbar-toggle:hover, .navbar-toggle:focus {
     background: transparent!important;
+}
+
+.navbar-toggle:focus {
+    border: solid #F3976C;
 }
 
 .navbar-toggle .icon-bar {
     background-color: rgba(0, 0, 0, .5);
     width: 26px;
+    margin: 6px;
 }
 
 .nav-invert .navbar .nav {
@@ -1056,6 +1062,10 @@ blockquote {
     }
     form {
         padding: 5px;
+    }
+
+    .img-responsive {
+        margin: auto;
     }
     .close-lightbox {
         display: inline-block;
